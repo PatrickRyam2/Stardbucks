@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+    min-height: 100vh;
+    background-color: #f4e8dc;
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.nav-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-esquerda .menu {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.nav-esquerda .menu:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+.nav-direita {
+    display: flex;
+    gap: 15px;
+}
+
+
+.nav .entrar:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.nav .entrar {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0 14px;
+
+    height: 36px;
+    min-width: 110px;
+
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-weight: 900;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav .cadastre-se:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.nav .cadastre-se {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0 14px;
+
+    height: 36px;
+    min-width: 110px;
+
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-weight: 900;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.text {
+    max-width: 520px;
+    margin: 0;
+}
+
+.text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.text p {
+    margin-top: 10px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.text .peca-agora {
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.text .peca-agora:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: green;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 100px);
+    padding: 0 80px;
+    gap: 40px;
+}
+
+.bebidas {
+    height: 420px;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.bebidas:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    /* NAV */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .nav .entrar,
+    .nav .cadastre-se {
+        width: 140px;
+        height: 42px;
+
+        font-size: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-esquerda {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-direita {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text {
+        margin: 30px 20px;
+        height: auto;
+        max-width: 100%
+    }
+
+    .text p {
+        width: 100%;
+    }
+
+    .bebidas {
+        height: auto;
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-coluna p {
+        max-width: 100%;
+    }
+
+    .footer-icones {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+.footer {
+    background: #1e3932;
+    color: white;
+    padding: 50px 20px 25px;
+    margin-top: 60px;
+}
+
+.footer-conteudo {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-coluna h3,
+.footer-coluna h4 {
+    margin-bottom: 15px;
+}
+
+.footer-coluna p {
+    opacity: 0.85;
+    max-width: 260px;
+    line-height: 1.4;
+}
+
+.footer-coluna a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.footer-coluna a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+
+.footer-icones {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-icones img {
+    background: white;
+    padding: 8px;
+    border-radius: 50%;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-icones img:hover {
+    transform: scale(1.2) rotate(5deg);
+    background: #d4e9e2;
+}
+
+
+.footer-copy {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.assinatura {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+
+
+.assinatura a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.assinatura a:hover {
+    border-bottom: 1px solid white;
+    opacity: 1;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
